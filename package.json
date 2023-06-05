@@ -25,7 +25,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.3",
+    "@commitlint/cli": "17.6.5",
     "@commitlint/config-conventional": "17.6.3",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@types/node": "20.2.5",
