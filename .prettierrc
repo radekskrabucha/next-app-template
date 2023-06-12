@@ -17,5 +17,9 @@
     "^[./]",
     "^[../]"
   ],
-  "importOrderSeparation": false
+  "importOrderSeparation": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": [
+    "./node_modules"
+  ]
 }
