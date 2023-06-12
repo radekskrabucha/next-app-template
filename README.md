@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Application Template
+
+This repository contains a Next.js project template. It's designed to provide a solid foundation for building your Next.js applications, with a focus on simplicity, best practices, and modern development tools.
+
+## Features
+
+- **Next.js**: The core framework that powers the application.
+- **TypeScript**: This project is configured to use TypeScript for static type checking.
+- **ESLint and Prettier**: The project is set up with ESLint for linting and Prettier for code formatting.
+- **Husky and lint-staged**: These tools are used to ensure that all committed code is linted and formatted.
+- **Commitizen and commitlint**: These tools are used to enforce conventional commit messages.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this template, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Clone the repository**: Clone this repository to your local machine.
+2. **Install dependencies**: Install the necessary dependencies by running `yarn install`.
+3. **Run the development server**: Start the development server by running `yarn dev`.
+4. **Open the application**: Open your web browser and navigate to `http://localhost:3000` to see the application in action.
+5. **Start editing**: You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project includes the following npm scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `yarn dev`: Starts the development server.
+- `yarn build`: Builds the application for production.
+- `yarn start`: Starts the application in production mode.
+- `yarn type-check`: Runs TypeScript to check for type errors.
+- `yarn lint`: Runs ESLint to catch and fix issues.
+- `yarn format`: Runs Prettier to format all code.
+- `yarn commit`: Runs Commitizen for commit message prompts.
+- `yarn reinstall`: Deletes `node_modules` and `yarn.lock`, then reinstalls dependencies.
