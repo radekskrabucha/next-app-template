@@ -28,7 +28,8 @@ This project includes the following npm scripts:
 - `yarn build`: Builds the application for production.
 - `yarn start`: Starts the application in production mode.
 - `yarn type-check`: Runs TypeScript to check for type errors.
-- `yarn lint`: Runs ESLint to catch and fix issues.
+- `yarn lint`: Runs ESLint to catch issues.
+- `yarn lint:fix`: Runs ESLint to catch and fix issues.
 - `yarn format`: Runs Prettier to format all code.
 - `yarn commit`: Runs Commitizen for commit message prompts.
 - `yarn reinstall`: Deletes `node_modules` and `yarn.lock`, then reinstalls dependencies.
