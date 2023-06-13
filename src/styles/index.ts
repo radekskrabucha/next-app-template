@@ -1,1 +1,1 @@
-export { inter } from './fonts'
+export { MainFont, SecondaryFont } from './fonts'

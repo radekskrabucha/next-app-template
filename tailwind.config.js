@@ -7,5 +7,13 @@ module.exports = {
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        main: 'var(--font-main)',
+        secondary: 'var(--font-secondary)'
+      }
+    }
+  },
   plugins: []
 }
