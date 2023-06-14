@@ -1,6 +1,6 @@
 import { Link } from '@/components'
 import { ExternalLink, InternalLink } from '@/config'
-import { dateUtils } from '@/utils'
+import { dateUtils, env } from '@/utils'
 import { SocialIcons } from './SocialIcons'
 
 export const Footer = () => (
@@ -28,7 +28,7 @@ export const Footer = () => (
           <SocialIcons />
           <Link href={ExternalLink.email}>
             <p className="font-secondary text-right max-sm:text-left text-sm text-gray-500 transition-colors duration-150 hover:text-gray-300">
-              rskrabucha13@gmail.com
+              {env.client.NEXT_PUBLIC_EMAIL}
             </p>
           </Link>
         </div>

@@ -1,4 +1,7 @@
+import './src/utils/env/client.mjs'
+
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   webpack: config => {
     config.module.rules.push({
@@ -10,4 +13,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+export default nextConfig
