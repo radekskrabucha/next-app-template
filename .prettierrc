@@ -9,17 +9,16 @@
   "arrowParens": "avoid",
   "singleAttributePerLine": true,
   "bracketSameLine": false,
+  "plugins": ["prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports"],
+  "pluginSearchDirs": [
+    "./node_modules"
+  ],
   "importOrder": [
     "^react(.*)$",
     "^next(.*)$",
-    "^(?!(assets|hooks|components|pages|styles|..?)\\/.*$).*",
     "^@/(.*)$",
     "^[./]",
     "^[../]"
   ],
-  "importOrderSeparation": false,
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "pluginSearchDirs": [
-    "./node_modules"
-  ]
+  "importOrderSeparation": false
 }

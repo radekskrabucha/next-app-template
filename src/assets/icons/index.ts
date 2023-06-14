@@ -1,7 +1,7 @@
-import Github from './github.svg'
-import Twitter from './twitter.svg'
-import Linkedin from './linkedin.svg'
 import { iconWithClassName } from '@/utils'
+import Github from './github.svg'
+import Linkedin from './linkedin.svg'
+import Twitter from './twitter.svg'
 
 export const Icons = {
   Github: iconWithClassName(Github),

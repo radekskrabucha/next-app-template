@@ -1,6 +1,6 @@
+import NextLink, { LinkProps as InternalLinkProps } from 'next/link'
 import { WithClassName } from '@/types'
 import { regexes } from '@/utils'
-import NextLink, { LinkProps as InternalLinkProps } from 'next/link'
 
 type LinkProps = {
   children: React.ReactNode
