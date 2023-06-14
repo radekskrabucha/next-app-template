@@ -15,6 +15,7 @@
     "reinstall": "rm -rf node_modules yarn.lock && yarn"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "1.0.2",
     "@t3-oss/env-nextjs": "0.4.0",
     "class-variance-authority": "0.6.0",
     "next": "13.4.5",

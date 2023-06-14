@@ -1,6 +1,9 @@
+import { Slot } from '@radix-ui/react-slot'
 import { cva, cx, VariantProps } from 'class-variance-authority'
 
-type ButtonProps = Pick<
+type ButtonProps = {
+  asChild?: boolean
+} & Pick<
   React.ComponentProps<'button'>,
   'children' | 'className' | 'onClick' | 'disabled' | 'type'
 > &
@@ -12,21 +15,26 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   children,
   type = 'button',
   disabled,
-  onClick
-}) => (
-  <button
-    className={cx(
-      'inline-flex py-2 px-4 min-w-[180px] items-center justify-center transition-color duration-150 rounded-md disabled:cursor-not-allowed',
-      buttonStyles({ variant }),
-      className
-    )}
-    type={type}
-    disabled={disabled}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-)
+  onClick,
+  asChild
+}) => {
+  const Comp = asChild ? Slot : 'button'
+
+  return (
+    <Comp
+      className={cx(
+        'inline-flex py-2 px-4 min-w-[180px] items-center justify-center transition-color duration-150 rounded-md disabled:cursor-not-allowed',
+        buttonStyles({ variant }),
+        className
+      )}
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
+    </Comp>
+  )
+}
 const buttonStyles = cva('', {
   variants: {
     variant: {
