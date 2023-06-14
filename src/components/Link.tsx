@@ -18,7 +18,7 @@ export const Link: React.FC<
   disabled,
   ...props
 }) => {
-  if (disabled) {
+  if (disabled || !href) {
     return (
       <span
         onMouseEnter={onMouseEnter}

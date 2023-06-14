@@ -15,17 +15,19 @@
     "reinstall": "rm -rf node_modules yarn.lock && yarn"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "0.4.0",
     "class-variance-authority": "0.6.0",
     "next": "13.4.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "zod": "3.21.4"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.5",
     "@commitlint/config-conventional": "17.6.5",
     "@svgr/webpack": "8.0.1",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
-    "@types/node": "20.3.0",
+    "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
     "@typescript-eslint/eslint-plugin": "5.59.11",
