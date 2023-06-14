@@ -5,8 +5,8 @@ export const InternalLink = {
 }
 export const ExternalLink = {
   github: env.client.NEXT_PUBLIC_GITHUB_URL,
-  linkedin: env.client.NEXT_PUBLIC_GITHUB_URL,
-  twitter: env.client.NEXT_PUBLIC_GITHUB_URL,
+  linkedin: env.client.NEXT_PUBLIC_LINKEDIN_URL,
+  twitter: env.client.NEXT_PUBLIC_TWITTER_URL,
   email: `mailto:${env.client.NEXT_PUBLIC_EMAIL}`,
   sourceCode: 'https://github.com/radekskrabucha/next-app-template'
 }
