@@ -8,11 +8,7 @@ export const metadata = {
     'A starter for Next.js using app router with TypeScript and Tailwind CSS.'
 }
 
-type RootLayoutProps = {
-  children: React.ReactNode
-}
-
-const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
+const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
   <html lang="en">
     <link
       rel="icon"

@@ -3,11 +3,12 @@ import { WithClassName } from '@/types'
 import { regexes } from '@/utils'
 
 type LinkProps = {
-  children: React.ReactNode
   disabled?: boolean
 } & InternalLinkProps
 
-export const Link: React.FC<WithClassName<LinkProps>> = ({
+export const Link: React.FC<
+  React.PropsWithChildren<WithClassName<LinkProps>>
+> = ({
   children,
   href,
   onMouseEnter,

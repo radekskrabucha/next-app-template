@@ -7,7 +7,7 @@ export const Footer = () => (
   <footer className="layout-container bg-gray-800 text-white">
     <div className="layout-section">
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4">
-        <div className=" flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Link
             className="text-4xl"
             href={InternalLink.home}
