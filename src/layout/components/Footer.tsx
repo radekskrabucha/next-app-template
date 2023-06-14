@@ -1,7 +1,7 @@
-import { Icons } from '@/assets/icons'
 import { Link } from '@/components'
 import { ExternalLink, InternalLink } from '@/config'
 import { dateUtils } from '@/utils'
+import { SocialIcons } from './SocialIcons'
 
 export const Footer = () => (
   <footer className="layout-container bg-gray-800 text-white">
@@ -25,17 +25,7 @@ export const Footer = () => (
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-3">
-            <Link href={ExternalLink.github}>
-              <Icons.Github className="fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300" />
-            </Link>
-            <Link href={ExternalLink.twitter}>
-              <Icons.Twitter className="fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300" />
-            </Link>
-            <Link href={ExternalLink.linkedin}>
-              <Icons.LinkedIn className="fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300" />
-            </Link>
-          </div>
+          <SocialIcons />
           <Link href={ExternalLink.email}>
             <p className="font-secondary text-sm text-gray-500 transition-colors duration-150 hover:text-gray-300">
               rskrabucha13@gmail.com
