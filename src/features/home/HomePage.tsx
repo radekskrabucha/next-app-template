@@ -8,10 +8,13 @@ export const HomePage = () => (
       <span className="text-blue-500">Radek&apos;s</span> Next.js Starter
     </h1>
     <Button asChild>
-      <div className="flex items-center gap-2">
+      <Link
+        className="flex items-center gap-2 capitalize"
+        href={ExternalLink.sourceCode}
+      >
         <Icons.Github className="fill-current text-white" />
-        <Link href={ExternalLink.sourceCode}>source code</Link>
-      </div>
+        source code
+      </Link>
     </Button>
   </section>
 )
