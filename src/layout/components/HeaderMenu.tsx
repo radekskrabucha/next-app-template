@@ -21,7 +21,7 @@ export const HeaderMenu = () => {
           isOpen ? 'max-md:left-0' : 'max-md:left-full'
         )}
       >
-        <NavLinks />
+        <NavLinks onNavLinkClick={onToggle} />
         <SocialIcons iconClassName="hover:text-gray-800" />
       </div>
       <Hamburger

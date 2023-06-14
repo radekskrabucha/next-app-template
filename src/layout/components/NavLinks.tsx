@@ -1,11 +1,16 @@
 import { InternalLink } from '@/config'
 import { NavLink } from './NavLink'
 
-export const NavLinks = () => (
+type NavLinksProps = {
+  onNavLinkClick: VoidFunction
+}
+
+export const NavLinks: React.FC<NavLinksProps> = ({ onNavLinkClick }) => (
   <ul className="flex flex-col gap-2">
     <NavLink
       href={InternalLink.home}
       text="Home"
+      onClick={onNavLinkClick}
     />
   </ul>
 )
