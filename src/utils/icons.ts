@@ -6,4 +6,4 @@ export const IconId = {
   twitter: 'twitter'
 } as const
 
-export const getIconHref = (id: IconIdType) => `/sprite.svg#${id}`
+export const getIconHref = (id: IconIdType) => `/icons/sprite.svg#${id}`

@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import { Button, Icon, Link } from '@/components'
 import { ExternalLink } from '@/config'
+import Avocado from '@/public/images/opengraph-image.jpg'
 
 export const HomePage = () => (
   <section className="layout-section gap-8 items-start">
@@ -20,5 +22,9 @@ export const HomePage = () => (
         source code
       </Link>
     </Button>
+    <Image
+      src={Avocado}
+      alt="Avocado"
+    />
   </section>
 )
