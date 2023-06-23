@@ -1,5 +1,4 @@
-import { Icons } from '@/assets/icons'
-import { Link } from '@/components'
+import { Icon, Link } from '@/components'
 import { ExternalLink } from '@/config'
 
 type SocialIconsProps = {
@@ -9,17 +8,26 @@ type SocialIconsProps = {
 export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
   <div className="flex items-center gap-3">
     <Link href={ExternalLink.github}>
-      <Icons.Github
+      <Icon
+        id="github"
+        width={24}
+        height={24}
         className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
       />
     </Link>
     <Link href={ExternalLink.twitter}>
-      <Icons.Twitter
+      <Icon
+        id="twitter"
+        width={24}
+        height={24}
         className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
       />
     </Link>
     <Link href={ExternalLink.linkedin}>
-      <Icons.LinkedIn
+      <Icon
+        id="linkedin"
+        width={24}
+        height={24}
         className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
       />
     </Link>

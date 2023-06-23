@@ -1,5 +1,4 @@
-import { Icons } from '@/assets/icons'
-import { Button, Link } from '@/components'
+import { Button, Icon, Link } from '@/components'
 import { ExternalLink } from '@/config'
 
 export const HomePage = () => (
@@ -12,7 +11,12 @@ export const HomePage = () => (
         className="flex items-center gap-2 capitalize"
         href={ExternalLink.sourceCode}
       >
-        <Icons.Github className="fill-current text-white" />
+        <Icon
+          id="github"
+          width={24}
+          height={24}
+          className="fill-current text-white"
+        />
         source code
       </Link>
     </Button>
