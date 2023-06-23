@@ -1,4 +1,5 @@
 import { IconId } from '@/types'
+import { getIconHref } from '@/utils'
 
 type IconProps = {
   id: IconId
@@ -6,6 +7,6 @@ type IconProps = {
 
 export const Icon: React.FC<IconProps> = ({ id, ...props }) => (
   <svg {...props}>
-    <use href={`/sprite.svg#${id}`} />
+    <use href={getIconHref(id)} />
   </svg>
 )
