@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { Layout } from '@/layout'
 import { MainFont, SecondaryFont } from '@/styles'
 import '@/styles/globals.css'
@@ -23,7 +24,11 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
       />
     </head>
     <body
-      className={`${MainFont.variable} ${SecondaryFont.variable} relative flex min-h-[100dvh] flex-col items-center overflow-x-hidden bg-slate-200 font-secondary`}
+      className={clsx(
+        MainFont.variable,
+        SecondaryFont.variable,
+        'relative flex min-h-[100dvh] flex-col items-center overflow-x-hidden bg-background font-secondary'
+      )}
     >
       <Layout>{children}</Layout>
     </body>
