@@ -13,7 +13,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ href, text, onClick }) => (
       onClick={onClick}
       href={href}
     >
-      <p className="font-secondary text-lg max-md:text-base text-gray-600 transition-colors duration-150 hover:text-gray-800">
+      <p className="font-secondary text-lg max-md:text-base text-gray-600 transition-colors duration-150 hover:text-secondary-400">
         {text}
       </p>
     </Link>

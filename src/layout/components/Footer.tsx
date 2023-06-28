@@ -4,7 +4,7 @@ import { dateUtils, env } from '@/utils'
 import { SocialIcons } from './SocialIcons'
 
 export const Footer = () => (
-  <footer className="layout-container bg-gray-800 text-white">
+  <footer className="layout-container bg-background-950 text-white">
     <div className="layout-section">
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4">
         <div className="flex flex-wrap items-center gap-2">

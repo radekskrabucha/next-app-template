@@ -1,5 +1,6 @@
 import { Icon, Link } from '@/components'
 import { ExternalLink } from '@/config'
+import { cn } from '@/utils'
 
 type SocialIconsProps = {
   iconClassName?: string
@@ -12,7 +13,10 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
         id="github"
         width={24}
         height={24}
-        className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
+        className={cn(
+          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          iconClassName
+        )}
       />
     </Link>
     <Link href={ExternalLink.twitter}>
@@ -20,7 +24,10 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
         id="twitter"
         width={24}
         height={24}
-        className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
+        className={cn(
+          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          iconClassName
+        )}
       />
     </Link>
     <Link href={ExternalLink.linkedin}>
@@ -28,7 +35,10 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
         id="linkedin"
         width={24}
         height={24}
-        className={`fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300 ${iconClassName}`}
+        className={cn(
+          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          iconClassName
+        )}
       />
     </Link>
   </div>

@@ -22,7 +22,7 @@ export const HeaderMenu = () => {
         )}
       >
         <NavLinks onNavLinkClick={onToggle} />
-        <SocialIcons iconClassName="hover:text-gray-800" />
+        <SocialIcons iconClassName="hover:text-secondary-400" />
       </div>
       <Hamburger
         isOpen={isOpen}
