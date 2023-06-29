@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { Button, Icon, Link } from '@/components'
+import { Button, Icon, Link, Image } from '@/components'
 import { ExternalLink } from '@/config'
 import Avocado from '@/public/images/avocado.jpg'
 
