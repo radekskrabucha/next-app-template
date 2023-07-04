@@ -1,4 +1,4 @@
-import type { ImageProps } from 'next/dist/client/image'
+import type { ImageProps } from 'next/image'
 import nextConfig from '../../next.config.mjs'
 import { withHttpsProtocol } from './url'
 
