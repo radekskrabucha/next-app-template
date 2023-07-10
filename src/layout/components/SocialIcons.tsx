@@ -11,10 +11,8 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
     <Link href={ExternalLink.github}>
       <Icon
         id="github"
-        width={24}
-        height={24}
         className={cn(
-          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          'h-6 w-6 fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
           iconClassName
         )}
       />
@@ -22,10 +20,8 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
     <Link href={ExternalLink.twitter}>
       <Icon
         id="twitter"
-        width={24}
-        height={24}
         className={cn(
-          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          'h-6 w-6 fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
           iconClassName
         )}
       />
@@ -33,10 +29,8 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
     <Link href={ExternalLink.linkedin}>
       <Icon
         id="linkedin"
-        width={24}
-        height={24}
         className={cn(
-          'fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
+          'h-6 w-6 fill-current text-gray-500 transition-colors duration-150 hover:text-gray-300',
           iconClassName
         )}
       />

@@ -7,7 +7,7 @@ export const Header = () => (
     <div className="layout-section">
       <nav className="flex items-center gap-4">
         <Link
-          className="text-4xl z-[1001]"
+          className="z-[1001] text-4xl"
           href={InternalLink.home}
         >
           🥑

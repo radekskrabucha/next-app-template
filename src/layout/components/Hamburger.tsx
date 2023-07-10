@@ -8,29 +8,29 @@ type HamburgerProps = {
 export const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => (
   <button
     onClick={onToggle}
-    className="w-6 h-5 hidden max-md:block relative z-[1001]"
+    className="relative z-[1001] hidden h-5 w-6 max-md:block"
   >
     <div
       className={cx(
-        'h-[2px] bg-gray-600 transition-all absolute',
-        isOpen ? 'top-[10px] w-0 left-1/2' : 'top-0 w-3/5 left-0'
+        'absolute h-[2px] bg-gray-600 transition-all',
+        isOpen ? 'left-1/2 top-[10px] w-0' : 'left-0 top-0 w-3/5'
       )}
     />
     <div
       className={cx(
-        'h-[2px] w-full bg-gray-600 transition-all absolute top-[10px]',
-        isOpen ? 'transform rotate-45' : 'transform rotate-0'
+        'absolute top-[10px] h-[2px] w-full bg-gray-600 transition-all',
+        isOpen ? 'rotate-45 transform' : 'rotate-0 transform'
       )}
     />
     <div
       className={cx(
-        'h-[2px] w-full bg-gray-600 transition-all absolute top-[10px]',
-        isOpen ? 'transform -rotate-45' : 'transform rotate-0'
+        'absolute top-[10px] h-[2px] w-full bg-gray-600 transition-all',
+        isOpen ? '-rotate-45 transform' : 'rotate-0 transform'
       )}
     />
     <div
       className={cx(
-        'h-[2px] bg-gray-600 transition-all absolute left-1/2',
+        'absolute left-1/2 h-[2px] bg-gray-600 transition-all',
         isOpen ? 'top-[10px] w-0' : 'top-[20px] w-3/5'
       )}
     />
