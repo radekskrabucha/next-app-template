@@ -24,10 +24,10 @@ export const Footer = () => (
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-end max-sm:items-start gap-2">
+        <div className="flex flex-col items-end gap-2 max-sm:items-start">
           <SocialIcons />
           <Link href={ExternalLink.email}>
-            <p className="font-secondary text-right max-sm:text-left text-sm text-gray-500 transition-colors duration-150 hover:text-gray-300">
+            <p className="text-right font-secondary text-sm text-gray-500 transition-colors duration-150 hover:text-gray-300 max-sm:text-left">
               {env.client.NEXT_PUBLIC_EMAIL}
             </p>
           </Link>

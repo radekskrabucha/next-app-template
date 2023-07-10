@@ -3,7 +3,7 @@ import { ExternalLink } from '@/config'
 import Avocado from '@/public/images/avocado.jpg'
 
 export const HomePage = () => (
-  <section className="layout-section gap-8 items-start">
+  <section className="layout-section items-start gap-8">
     <h1 className="font-main text-6xl font-extrabold max-sm:text-3xl">
       <span className="text-secondary">Radek&apos;s</span> Next.js Starter
     </h1>

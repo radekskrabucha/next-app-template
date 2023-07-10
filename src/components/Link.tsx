@@ -25,6 +25,7 @@ export const Link: React.FC<
         onClick={onClick}
         onTouchStart={onTouchStart}
         className={className}
+        {...props}
       >
         {children}
       </span>
