@@ -4,7 +4,8 @@ import { regexes } from '@/utils'
 
 type LinkProps = {
   disabled?: boolean
-} & InternalLinkProps
+} & InternalLinkProps &
+  Pick<React.ComponentProps<'a'>, 'aria-label'>
 
 export const Link: React.FC<
   React.PropsWithChildren<WithClassName<LinkProps>>
@@ -25,6 +26,7 @@ export const Link: React.FC<
         onClick={onClick}
         onTouchStart={onTouchStart}
         className={className}
+        aria-disabled="true"
         {...props}
       >
         {children}

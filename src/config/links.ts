@@ -1,6 +1,7 @@
+import { LinkProps } from 'next/link'
 import { env } from '@/utils'
 
-export const InternalLink = {
+export const InternalLink: Record<string, LinkProps['href']> = {
   home: '/'
 }
 export const ExternalLink = {

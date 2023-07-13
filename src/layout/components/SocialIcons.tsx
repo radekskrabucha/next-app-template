@@ -8,7 +8,10 @@ type SocialIconsProps = {
 
 export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
   <div className="flex items-center gap-3">
-    <Link href={ExternalLink.github}>
+    <Link
+      href={ExternalLink.github}
+      aria-label="Github"
+    >
       <Icon
         id="github"
         className={cn(
@@ -17,7 +20,10 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
         )}
       />
     </Link>
-    <Link href={ExternalLink.twitter}>
+    <Link
+      href={ExternalLink.twitter}
+      aria-label="Twitter"
+    >
       <Icon
         id="twitter"
         className={cn(
@@ -26,7 +32,10 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({ iconClassName }) => (
         )}
       />
     </Link>
-    <Link href={ExternalLink.linkedin}>
+    <Link
+      href={ExternalLink.linkedin}
+      aria-label="LinkedIn"
+    >
       <Icon
         id="linkedin"
         className={cn(
