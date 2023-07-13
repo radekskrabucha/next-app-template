@@ -7,7 +7,7 @@ export type ButtonProps = {
   asChild?: boolean
 } & Pick<
   React.ComponentProps<'button'>,
-  'children' | 'className' | 'onClick' | 'disabled' | 'type'
+  'children' | 'className' | 'onClick' | 'disabled' | 'type' | 'id'
 > &
   VariantProps<typeof buttonVariants>
 
@@ -21,7 +21,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       type = 'button',
       disabled,
       onClick,
-      children
+      children,
+      id
     },
     ref
   ) => {
@@ -34,6 +35,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         type={type}
         disabled={disabled}
         onClick={onClick}
+        id={id}
       >
         {children}
       </Comp>
@@ -43,7 +45,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = 'Button'
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-md text-sm capitalize font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 disabled:pointer-events-none',
+  'inline-flex items-center justify-center gap-1 rounded-md text-sm capitalize font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed',
   {
     variants: {
       variant: {
