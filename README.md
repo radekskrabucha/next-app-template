@@ -16,6 +16,7 @@ To get started with this template, follow the steps below:
 
 1. **Clone the repository**: Clone this repository to your local machine.
 2. **Install dependencies**: Install the necessary dependencies by running `yarn install`.
+2. **Copy the environment file**: Copy the `.env.example` file to `.env` (`cp .env.example .env`)  and fill in the necessary values.
 3. **Run the development server**: Start the development server by running `yarn dev`.
 4. **Open the application**: Open your web browser and navigate to `http://localhost:3000` to see the application in action.
 5. **Start editing**: You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
