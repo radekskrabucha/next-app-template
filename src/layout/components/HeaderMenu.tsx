@@ -1,16 +1,20 @@
 'use client'
 
+import { useDisclosure } from '@mantine/hooks'
 import { cx } from 'class-variance-authority'
-import { useToggle } from '@/hooks'
 import { Hamburger } from './Hamburger'
 import { NavLinks } from './NavLinks'
 import { SocialIcons } from './SocialIcons'
 
 export const HeaderMenu = () => {
-  const [isOpen, toggleIsOpen] = useToggle()
+  const [isOpen, handlers] = useDisclosure(false)
   const onToggle = () => {
-    toggleIsOpen()
+    handlers.toggle()
     document.body.style.overflowY = isOpen ? 'visible' : 'hidden'
+  }
+  const onClose = () => {
+    handlers.close()
+    document.body.style.overflowY = 'visible'
   }
 
   return (
@@ -21,7 +25,7 @@ export const HeaderMenu = () => {
           isOpen ? 'max-md:translate-x-0' : 'max-md:translate-x-full'
         )}
       >
-        <NavLinks onNavLinkClick={onToggle} />
+        <NavLinks onNavLinkClick={onClose} />
         <SocialIcons iconClassName="hover:text-secondary-400" />
       </div>
       <Hamburger

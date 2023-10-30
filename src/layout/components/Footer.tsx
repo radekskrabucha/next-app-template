@@ -1,6 +1,7 @@
-import { Link } from '@/components'
-import { ExternalLink, InternalLink } from '@/config'
-import { dateUtils, env } from '@/utils'
+import { Link } from '@/components/Link'
+import { ExternalLink, InternalLink } from '@/config/app'
+import { getCurrentYear } from '@/utils/date'
+import { client } from '@/utils/env'
 import { SocialIcons } from './SocialIcons'
 
 export const Footer = () => (
@@ -28,14 +29,14 @@ export const Footer = () => (
           <SocialIcons />
           <Link href={ExternalLink.email}>
             <p className="text-right font-secondary text-sm text-gray-500 transition-colors duration-150 hover:text-gray-300 max-sm:text-left">
-              {env.client.NEXT_PUBLIC_EMAIL}
+              {client.NEXT_PUBLIC_EMAIL}
             </p>
           </Link>
         </div>
       </div>
       <div className="border-t border-gray-700 pt-4">
         <p className="text-sm text-gray-500">
-          © {dateUtils.getCurrentYear()} Radek Skrabucha
+          © {getCurrentYear()} Radek Skrabucha
         </p>
       </div>
     </div>

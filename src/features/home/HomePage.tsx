@@ -1,5 +1,8 @@
-import { Button, Icon, Link, Image } from '@/components'
-import { ExternalLink } from '@/config'
+import { Button } from '@/components/Button'
+import { Icon } from '@/components/Icon'
+import { Image } from '@/components/Image'
+import { Link } from '@/components/Link'
+import { ExternalLink } from '@/config/app'
 import Avocado from '@/public/images/avocado.jpg'
 
 export const HomePage = () => (
@@ -17,9 +20,7 @@ export const HomePage = () => (
       >
         <Icon
           id="github"
-          width={24}
-          height={24}
-          className="fill-current text-white"
+          className="h-6 w-6 fill-current"
         />
         source code
       </Link>

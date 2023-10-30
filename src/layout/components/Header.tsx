@@ -1,5 +1,5 @@
-import { Link } from '@/components'
-import { InternalLink } from '@/config'
+import { Link } from '@/components/Link'
+import { InternalLink } from '@/config/app'
 import { HeaderMenu } from './HeaderMenu'
 
 export const Header = () => (

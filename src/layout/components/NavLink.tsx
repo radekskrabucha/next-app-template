@@ -1,8 +1,8 @@
-import { LinkProps } from 'next/link'
-import { Link } from '@/components'
+import { Link } from '@/components/Link'
+import type { LinkHref } from '@/types/url'
 
 type NavLinkProps = {
-  href: LinkProps['href']
+  href: LinkHref
   text: string
   onClick: VoidFunction
 }
