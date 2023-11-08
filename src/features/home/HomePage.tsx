@@ -11,7 +11,7 @@ export const HomePage = () => (
       <span className="text-secondary">Radek&apos;s</span> Next.js Starter
     </h1>
     <Button
-      variant="secondary"
+      variant="primary"
       asChild
     >
       <Link
